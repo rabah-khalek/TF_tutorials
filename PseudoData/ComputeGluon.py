@@ -25,9 +25,9 @@ if __name__ == '__main__':
     
     pdf_name = sys.argv[1]
 
-    xmin = -3
+    xmin = -6
     xmax = 0
-    nx = 201
+    nx = 1001
     Nrep = 100
     Q0=2
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     data.write("# [xmin, xmax, nx]: [10^("+str(xmin)+"), 10^("+str(xmax)+"), "+str(nx)+"]\n")
     data.write("# \t x \t gluon(cv) \t gluon(sd) \n ")
 
-    float_f = '{:>10.6f}'
+    float_f = '{:>10.8f}'
 
     for ix in range(nx-1):
         line = []
