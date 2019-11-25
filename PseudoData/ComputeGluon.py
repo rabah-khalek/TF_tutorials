@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
     gluon_std = np.std(gluon_reps, axis=0)
 
-    data = open("gluon_"+pdf_name+".dat", "w")
+    data = open("gluon_"+pdf_name+"_xmin1e"+str(xmin)+".dat", "w")
     data.write("# pdf: "+pdf_name+"\n")
     data.write("# Q0: "+str(Q0)+" GeV \n")
     data.write("# Nrep: "+str(Nrep)+"\n")
